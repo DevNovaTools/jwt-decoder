@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure JWT Decoder - 100% Client-Side</title>
+    <meta name="description" content="Free online JSON Web Token (JWT) decoder. 100% client-side decoding ensures your tokens and data never leave your browser.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="main-wrapper">
+        <div class="container">
+            <h1>Secure JWT Decoder</h1>
+            <p>Paste a JSON Web Token below. Decoding happens entirely in your browser.</p>
+            <textarea id="jwtInput" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."></textarea>
+            
+            <div class="grid-output">
+                <div class="output-section">
+                    <h3>Header</h3>
+                    <pre id="headerOutput">Waiting for token...</pre>
+                </div>
+                <div class="output-section">
+                    <h3>Payload</h3>
+                    <pre id="payloadOutput">Waiting for token...</pre>
+                </div>
+            </div>
+        </div>
+
+        <article class="seo-content">
+            <h2>What is a JSON Web Token (JWT)?</h2>
+            <p>A JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed.</p>
+            
+            <h3>Why use a Client-Side Decoder?</h3>
+            <p>Security is paramount when handling authentication tokens. Many online decoders send your token to a backend server, potentially exposing sensitive session data or user information. Our tool runs <strong>100% client-side</strong> using JavaScript. Your token never leaves your device, ensuring complete data privacy for developers and sysadmins.</p>
+        </article>
+    </main>
+    <script src="script.js"></script>
+    <script data-goatcounter="https://devnovatools-cron.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
